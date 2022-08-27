@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.5;
+}
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+
+}
+
+img{
+    max-width: 100%;
+}
+body{
+    font-size: 16px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color:var(--Grayish-Blue);
+    padding:1.25rem 1.25rem 2rem;
+    border-radius: 1rem;
+    
+}
+.container h1{
+    color:var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font: size 0.825rem;
+    margin-bottom: 1rem;
+}
+container p{
+    margin-bottom: 2rem;
+    color:var(--Light-Cyan)   
+}
+.container picture img{
+    margin-bottom: 1rem;
+}
+.container button{
+    background-color: var(--Neon-Green);
+    padding: 1.25rem;
+    border:none;
+    border-radius :75%; 
+    transition:background-color 0.2s ease-in-out;
+     
+}
+.container button:hover{
+    background-color: hsl(115, 84%, 65%);
+}
+
+
+.attribution{
+    font-size:11px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.attribution a{
+    color:  hsl(228,45%,44%);
+    transition: color 0.3s ease-in-out;
+}
+.attribution a:hover{
+    color:rgb(46, 58, 102);
+}
+@media(min-width:500px){
+    .container{
+        max-width: 480px;
+    }
+}
